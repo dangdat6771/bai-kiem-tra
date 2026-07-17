@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let diemLop = [7, 9, 4, 8, 6, 10, 3, 5];
+      console.log("Số lượng học viên trong lớp: " + diemLop.length);
+      let sum = 0;
+      let max = 0;
+      let min = diemLop[1];
+      let count = 0;
+      for (let i = 0; i < diemLop.length; i++) {
+        if (diemLop[i] > max) {
+          max = diemLop[i];
+        }
+        if (diemLop[i] < min) {
+          min = diemLop[i];
+        }
+        if (diemLop[i] >= 5) {
+          count++;
+        }
+        sum += diemLop[i];
+      }
+      console.log("Điểm cao nhất là:" + max);
+      console.log("Điểm thấp nhất là:" + min);
+      console.log("Tổng điểm của lớp:" + sum);
+      console.log("Số học viên có điểm >= 5 là:" + count);
+    </script>
+  </body>
+</html>
